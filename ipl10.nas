@@ -1,0 +1,23 @@
+
+CYLS	EQU		10
+	ORG		0x7c00
+	JMP		entry
+	DB		0x90
+	DB		"HARIBOTE"
+	DW		512
+	DB		1
+	DW		1
+	DB		2
+	DW		224
+	DW		2880
+	DB		0xf0
+	DW		9
+	DW		18
+	DW		2
+	DD		0
+	DD		2880
+	DB		0,0,0x29
+	DD		0xffffffff
+	DB		"HARIBOTEOS"
+	DB		"FAT12"
+	RESB	18
